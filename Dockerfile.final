@@ -1,4 +1,4 @@
-FROM node:carbon AS node-mongodb
+FROM node:carbon
 # Create app directory
 WORKDIR /usr/src/app
 # Install app dependencies
@@ -6,9 +6,10 @@ COPY package*.json ./
 RUN npm install
 # RUN npm install nodemon
 # Copy app source code
-# COPY . .
-#Expose port and start application
+COPY . .
+#Expose port
 EXPOSE 8080
+# Start application with nodemon (Restart on file changes)
 CMD [ "npm", "run", "start.dev" ]
 # CMD [ "npm", "start" ]
 # CMD ["nodemon", ".", "-e", "js,css,ejs"]

@@ -1,19 +1,34 @@
-version: "2"
+version: "3.8"
 services:
-  web:
-    image: node:8.9.4
+  nodejs:
+    image: my_nodejs
+    container_name: lab_js
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     privileged: true
-    build: .
     ports:
     - "8080:8080"
     depends_on:
     - mongo
     volumes: 
     - ./:/usr/src/app
+    networks:
+      - node-mongo
   mongo:
     image: mongo:3.6.23
+    hostname: mongo123
+    container_name: lab_mongo
     privileged: true
     ports:
     - "27017:27017"
     volumes:
-    - ./mongo:/data/db
+      - type: volume
+        source: mongoDB
+        target: /data/db
+    networks:
+      - node-mongo
+networks:
+  node-mongo:
+volumes:
+  mongoDB:
