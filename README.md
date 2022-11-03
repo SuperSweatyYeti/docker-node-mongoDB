@@ -1,5 +1,7 @@
 # Node.js Authentication Demo with MongoDB
 
+Fresh start
+
 Code takem from scotch.io tutorial series: Complete Guide to Node Authentication
 
 Using Passport to authenticate users locally.
