@@ -1,4 +1,4 @@
-# Easy Node Authentication
+# Node.js Authentication Demo with MongoDB
 
 Code takem from scotch.io tutorial series: Complete Guide to Node Authentication
 
@@ -9,12 +9,9 @@ This is modified from the original scotch.io by removing twitter, google and fac
 ## Instructions
 If you would like to download the code and try it for yourself:
 
-1. Clone the repo: `git clone git@github.com`
-2. Install packages: `npm install`
-3. Change out the database configuration in config/database.js
-4. Launch: `node server.js`
-5. Visit in your browser at: `http://localhost:8080`
-
+1. Clone the repo: `https://github.com/SuperSweatyYeti/docker-node-mongoDB`
+2. run "`docker-compose up`" in your terminal
+3. Visit the site in your browser at: `http://localhost:8080`
 ## The Tutorials
 
 - [Getting Started and Local Authentication](http://scotch.io/tutorials/easy-node-authentication-setup-and-local)
