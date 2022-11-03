@@ -13,6 +13,3 @@ logs
 results
 
 npm-debug.log
-
-config/database.js
-config/auth.js
