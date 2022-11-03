@@ -16,7 +16,7 @@ services:
     networks:
       - node-mongo
   mongo:
-    image: mongo:3.6.23
+    image: mongo:4.2
     hostname: mongo123
     container_name: lab_mongo
     privileged: true
