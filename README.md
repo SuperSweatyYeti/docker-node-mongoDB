@@ -9,7 +9,7 @@ This is modified from the original scotch.io by removing twitter, google and fac
 ## Instructions
 If you would like to download the code and try it for yourself:
 
-1. Clone the repo:&emsp;`git clone https://github.com/SuperSweatyYeti/docker-node-mongoDB`
+1. Clone the repo:&nbsp;`git clone https://github.com/SuperSweatyYeti/docker-node-mongoDB`
 2. run "`docker-compose up`" in your terminal
 3. Visit the site in your browser at: `http://localhost:8080`
 ## The Tutorials
